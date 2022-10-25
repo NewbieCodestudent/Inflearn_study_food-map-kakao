@@ -5,4 +5,7 @@ module.exports = function (app) {
   // 라우터 정의
   // app.HTTP메서드(uri, 컨트롤러 콜백함수)
   app.get("/restaurants", index.readRestaurants);
+
+  // 회원가입 API
+  app.post("/sign-up", index.createUsers);
 };
